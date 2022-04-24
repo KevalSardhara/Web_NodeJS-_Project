@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{{>headerlink}}
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/fontawesome.min.css" integrity="sha512-RUDCXG3qlIoMxuNYXWvgh3WT6t+dBpm4yzBHkLmqw3itMjBPKFtOz1/tyHrcJqtCD3lkDLH72wzbRB1/iEhEpw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="shortcut icon"
+      href="/gmail.png"
+      type="image/png"
+      sizes="76x76"
+    />
+    <title>
+        Wheater App Index
+    </title>
+
+
+
+
+
+
+  </head>
+  <body>
+  {{>header}}
+
+<!-- main header start-->
+<div class="container-fluid main_menu" style="font-weight: 900; text-transform: uppercase; font-style: italic;">
+    <div class="row">
+      <div class="col-md-2 mt-2 col-2 max-auto">
+      </div>
+      <div class="col-md-7 mt-2 col-12 max-auto">
+          <form>
+            <input type="text" id="city_text" class="form-control" placeholder="enter city name" autocomplete="off">
+            <input type="submit" class="mt-2 btn btn-primary"value="search" id="submitBTN">
+            {{!-- <button class="btn btn-success" type="submit" name="submitname" value="search" id="SubmitBTN">
+                submit
+            </button> --}}
+          </form>
+      </div>
+      <div class="col-md-2 mt-2 col-2 max-auto">
+      </div>
+    </div>
+
+
+    <div class="row mt-2" >
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-7">
+          <div class="card center" style="width: 18rem;">
+  <div class="card-body">
+            <div>
+                <p id="day">Thuesday</p>
+                <p id="today_data">13 OCT</p>
+            </div>
+            <div>
+                <p id="city_data">Get Output Data</p>
+                <div>
+                    <p id="temp" style="float: left;"><span>0</span><span>&deg;</span><span>C</span></p>
+                    <p id="temp-status"><i class="fa fa-cloud ps-2"></i></p>
+                </div>
+            </div>
+          </div>
+              </div>
+  </div>
+        <div class="col-md-2">
+        </div>
+
+</div>
+
+</div>
+
+<!-- main header end-->
+
+
+{{>footerlink}}
+  <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>

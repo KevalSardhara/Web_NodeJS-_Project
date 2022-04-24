@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&family=Nunito:wght@200&family=Patrick+Hand&display=swap');
+
+/* most imp code for the footer as the botam side to write it stay on it */
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: chartreuse;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-toggler{
+    color: rgb(255, 255, 255);
+}
+
+.footer{
+    line-height:3rem;
+    margin-top: auto;
+    width: 100%;
+}
