@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get("/about/:a/:b", (req, res) => {
+app.get("/about/", (req, res) => {
     // File data to the run on it.
     // Write the code of the ---> sendFile
     //   res.sendFile(pathFileAbout);
