@@ -39,11 +39,12 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
-app.get("/about", (req, res) => {
+app.get("/about/:a/:b", (req, res) => {
     // File data to the run on it.
     // Write the code of the ---> sendFile
     //   res.sendFile(pathFileAbout);
       // res.end();
+      console.log(req.params);
       res.render("about");
   });
 
@@ -59,7 +60,7 @@ app.get("/*", (req, res) => {
 //   res.send("404 error page");
 
 res.render("404error",{
-        message : "404 Error page! page not found pleace chake it your url path",  
+        message : "404 Error page! page not found pleace chake it your url path",
     });
 
     // res.json({
